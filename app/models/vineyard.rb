@@ -1,0 +1,3 @@
+class Vineyard < ApplicationRecord
+    
+end
