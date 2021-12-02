@@ -1,8 +1,7 @@
-require 'capybara'
 require 'rails_helper'
 
-RSpec.describe 'Vineyard index' do 
-# RSpec.describe Vineyard, type: :model do
+# RSpec.describe 'Vineyard index' do
+RSpec.describe Vineyard, type: :feature do
     it 'exists' do
         vineyard = Vineyard.create
         expect(vineyard).to be_a(Vineyard)
