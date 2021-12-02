@@ -20,7 +20,9 @@ RSpec.describe Vineyard, type: :feature do
       vineyard2 = Vineyard.create!(name: "Pikachu Valley", organic: true, years_established: 10)
 
       visit "/vineyards"
-      expect(page).to have_content([vineyard1, vineyard2])
+
+      expect(page).to have_content([vineyard1.name, vineyard2.name])
+
     end
 
 end

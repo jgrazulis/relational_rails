@@ -1,6 +1,5 @@
-class Vineyards < ApplicationController
+class VineyardsController < ApplicationController
   def index
-    binding.pry
     @vineyards = Vineyard.all
   end
 
