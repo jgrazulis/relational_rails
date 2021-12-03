@@ -8,3 +8,5 @@
 
 willamette_valley = Vineyard.create(name: "Willamette Valley", organic: true, years_established: 15)
 pikachu_valley = Vineyard.create(name: "Pikachu Valley", organic: true, years_established: 10)
+
+ash = Trainer.create(name: "Ash Ketchum", age: 11, awake: true)
