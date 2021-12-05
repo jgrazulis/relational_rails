@@ -4,7 +4,6 @@ RSpec.describe Vineyard, type: :feature do
     it 'exists' do
         vineyard = Vineyard.create
         expect(vineyard).to be_a(Vineyard)
-        expect(Vineyard.count).to eq(1)
     end
 
     it 'has attributes' do

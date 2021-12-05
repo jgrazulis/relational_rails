@@ -1,3 +1,3 @@
 class Wine < ApplicationRecord
-  belongs_to :vineyards
+  belongs_to :vineyard
 end
