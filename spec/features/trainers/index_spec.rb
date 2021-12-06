@@ -13,4 +13,13 @@ RSpec.describe Trainer, type: :feature do
       expect(ash.age).to eq(11)
       expect(ash.awake).to eq(true)
   end
+
+  it 'displays trainers on page' do
+    ash = Trainer.create!(name: "Ash Ketchum", age: 11, awake: true)
+
+    visit "/trainers"
+
+    expect(page).to have_content("Ash Ketchum")
+    expect(Trainer.count).to eq(1)
+  end
 end
