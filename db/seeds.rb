@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-willamette_valley = Vineyard.create(name: "Willamette Valley", organic: true, years_established: 15)
-pikachu_valley = Vineyard.create(name: "Pikachu Valley", organic: true, years_established: 10)
+willamette_valley = Vineyard.find_or_create_by(name: "Willamette Valley", organic: true, years_established: 15)
+pikachu_valley = Vineyard.find_or_create_by(name: "Pikachu Valley", organic: true, years_established: 10)
 
-ash = Trainer.create(name: "Ash Ketchum", age: 11, awake: true)
+ash = Trainer.find_or_create_by(name: "Ash Ketchum", age: 11, awake: true)
