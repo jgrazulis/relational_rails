@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 2021_12_02_233809) do
     t.boolean "fainted"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.bigint "trainers_id"
-    t.index ["trainers_id"], name: "index_pokemons_on_trainers_id"
+    t.bigint "trainer_id"
+    t.index ["trainer_id"], name: "index_pokemons_on_trainer_id"
   end
 
   create_table "trainers", force: :cascade do |t|
@@ -52,6 +52,6 @@ ActiveRecord::Schema.define(version: 2021_12_02_233809) do
     t.index ["vineyard_id"], name: "index_wines_on_vineyard_id"
   end
 
-  add_foreign_key "pokemons", "trainers", column: "trainers_id"
+  add_foreign_key "pokemons", "trainers"
   add_foreign_key "wines", "vineyards"
 end
