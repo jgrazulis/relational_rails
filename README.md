@@ -21,4 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Schema pdf: 
+[Pokemon + Vineyard Relational -dbdesigner.pdf](https://github.com/jgrazulis/relational_rails/files/7686900/Pokemon.%2B.Vineyard.Relational.-dbdesigner.pdf)
