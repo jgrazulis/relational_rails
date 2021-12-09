@@ -7,7 +7,7 @@ class CreatePokemons < ActiveRecord::Migration[5.2]
       t.boolean :fainted
       t.datetime :created_at
       t.datetime :updated_at
-      t.references :trainers, foreign_key: true
+      t.references :trainer, foreign_key: true
     end
   end
 end
